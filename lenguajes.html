@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lenguajes</title>
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <h1>Preferencias de Lenguajes</h1>
+    </header>
+
+    <!-- navegacion -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="lenguajes.html">Lenguajes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- foto de perfil -->
+        <section>
+            <h2>Mi foto de perfil</h2>
+            <img src="perfil.jpg" alt="Foto de perfil" width="120">
+        </section>
+
+        <!-- formulario -->
+        <section>
+            <h2>Formulario de preferencias</h2>
+            <form action="#" method="post">
+                <!-- pregunta sobre lenguajes -->
+                <p>¿Qué lenguajes conoces?</p>
+                <input type="checkbox" id="html" name="lenguajes" value="HTML">
+                <label for="html">HTML</label><br>
+
+                <input type="checkbox" id="css" name="lenguajes" value="CSS">
+                <label for="css">CSS</label><br>
+
+                <input type="checkbox" id="js" name="lenguajes" value="JavaScript">
+                <label for="js">JavaScript</label><br>
+
+                <input type="checkbox" id="python" name="lenguajes" value="Python">
+                <label for="python">Python</label><br>
+
+                <input type="checkbox" id="java" name="lenguajes" value="Java">
+                <label for="java">Java</label><br><br>
+                <!-- campo numerico -->
+                <label for="horas">¿Cuántas horas de programación estudias al día?</label><br>
+                <input type="number" id="horas" name="horas" min="0" max="24" required><br><br>
+                <!-- boton -->
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
