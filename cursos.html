@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Inscripcion a Cursos</h1>
+        <nav>
+            <!-- enlaces de navegacion -->
+            <a href="index.html">Inicio</a> 
+            <a href="registro.html">Registro</a> 
+            <a href="lenguajes.html">Lenguajes</a> 
+            <a href="validacion.html">Validacion</a>
+            <a href="cursos.html">Cursos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de inscripcion</h2>
+        <form action="#" method="post">
+            <!-- nombres -->
+            <label for="nombres">Nombres:</label><br>
+            <input type="text" id="nombres" name="nombres" required><br><br>
+
+            <!-- apellidos -->
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <!-- documento -->
+            <label for="dni">Documento de identidad:</label><br>
+            <input type="text" id="dni" name="dni" required><br><br>
+
+            <!-- correo -->
+            <label for="correo">Correo electronico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <!-- seleccion de curso -->
+            <label for="curso">Selecciona un curso:</label><br>
+            <select id="curso" name="curso" required>
+                <option value="web">Introduccion al desarrollo web</option>
+                <option value="arquitectura">Arquitectura de computadoras</option>
+                <option value="discretas">Estructuras discretas</option>
+            </select><br><br>
+
+            <!-- modalidad -->
+            <p>Modalidad:</p>
+            <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+            <label for="presencial">Presencial</label><br>
+            <input type="radio" id="virtual" name="modalidad" value="virtual">
+            <label for="virtual">Virtual</label><br><br>
+
+            <!-- horarios -->
+            <p>Horarios disponibles:</p>
+            <input type="checkbox" id="manana" name="horarios" value="manana">
+            <label for="manana">Manana</label><br>
+            <input type="checkbox" id="tarde" name="horarios" value="tarde">
+            <label for="tarde">Tarde</label><br>
+            <input type="checkbox" id="noche" name="horarios" value="noche">
+            <label for="noche">Noche</label><br><br>
+
+            <!-- comentarios -->
+            <label for="comentarios">Comentarios adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+            <!-- botones -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </main>
+</body>
+
+</html>
